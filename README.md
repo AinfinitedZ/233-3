@@ -1,18 +1,17 @@
-## Getting Started
+CSDS233 Project 3 log
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+2.20 10:13
 
-## Folder Structure
+Finish Tree interface and constructors of BST. 
 
-The workspace contains two folders by default, where:
+2.20 10:31
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Finish coding insert() method in BST. 
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+2.20 11:18
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Finish testing insert() method. 
 
-## Dependency Management
+Finish inorderRec() method. 
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Finish testing inorderRec() method. 
