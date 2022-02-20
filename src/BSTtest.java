@@ -45,4 +45,17 @@ public class BSTtest{
         test.inorderRec();
         assertEquals(equalArray, test.inorderRec());
     }
+
+    @Test
+    public void testSearch(){
+        BST<Integer, Integer> test = new BST<>();
+        test.insert(3, 26);
+        test.search(3);
+        assertTrue(test.search(3).equals(26));     
+        test.insert(2, 80);
+        test.insert(4, 90);
+        test.insert(5, 100);
+        assertTrue(test.search(5).equals(100));
+        assertEquals(null, test.search(1));
+    }
 }

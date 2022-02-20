@@ -15,3 +15,5 @@ Finish testing insert() method.
 Finish inorderRec() method. 
 
 Finish testing inorderRec() method. 
+
+Time spent 1.5h

@@ -11,6 +11,10 @@ public class BST<T extends Comparable<T>,V> implements tree<T,V>{
             this.key = key;
             this.value = value;
         }
+        public BN(){
+            this.key = null;
+            this.value = null;
+        }
     }
 
     private BN root;
@@ -58,7 +62,17 @@ public class BST<T extends Comparable<T>,V> implements tree<T,V>{
     }
 
     public V search(T key){
-        return root.value;
+        BN ptr = root;
+        while(ptr.left != null || ptr.right != null){
+            if(key.compareTo(ptr.key) < 0){
+                ptr = ptr.left;
+            } else if(key.compareTo(ptr.key) > 0){
+                ptr = ptr.right;
+            } else if(key.compareTo(ptr.key) == 0){
+                return ptr.value;
+            }
+        }
+        return key.equals(ptr.key) ? ptr.value : null;
     }
 
     public void delete(T key){
