@@ -22,5 +22,15 @@ Time spent 1.5h
 
 Finish kthSmallestTraversal() method. Test needed.
 
+3.2 23:59
+
+Fixed bug when testing BST using Double as key. Replace == to .equals for comparing two Objects.
+
+3.2 00:11
+
+Finish Demostration. Finish key-value part. Demostrate the Generic type by using two other types String and Double. 
+
+
+
 
 

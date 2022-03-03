@@ -27,6 +27,23 @@ public class BSTtest{
     }
 
     @Test
+    public void testDelete(){
+        BST<Integer, Integer> test = new BST<>();
+        ArrayList<Integer> equalArray = new ArrayList<>();
+        test.delete(10);
+        test.insert(3, 26);
+        test.delete(3);
+        assertEquals(equalArray, test.inorderRec());
+        test.insert(2, 80);
+        test.insert(4, 90);
+        test.insert(5, 100);
+        test.delete(5);
+        equalArray.add(80);
+        equalArray.add(90);
+        assertEquals(equalArray, test.inorderRec());
+    }
+
+    @Test
     public void testInOrderRec(){
         BST<Integer, Integer> test = new BST<>();
         ArrayList<Integer> equalArray = new ArrayList<>();
