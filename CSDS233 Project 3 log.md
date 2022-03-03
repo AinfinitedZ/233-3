@@ -17,3 +17,10 @@ Finish inorderRec() method.
 Finish testing inorderRec() method. 
 
 Time spent 1.5h
+
+2.25 16:24
+
+Finish kthSmallestTraversal() method. Test needed.
+
+
+

@@ -48,7 +48,8 @@ public class BSTtest{
 
     @Test
     public void testSearch(){
-        BST<Integer, Integer> test = new BST<>();
+        tree<Integer, Integer> test = new BST<>();
+        assertEquals(null, test.search(1));
         test.insert(3, 26);
         test.search(3);
         assertTrue(test.search(3).equals(26));     
@@ -57,5 +58,17 @@ public class BSTtest{
         test.insert(5, 100);
         assertTrue(test.search(5).equals(100));
         assertEquals(null, test.search(1));
+    }
+
+    @Test
+    public void testKSmallest(){
+        tree<Integer, Integer> test = new BST<>();
+        test.insert(3, 26);
+        test.insert(2, 88);
+        test.insert(4, 98);
+        test.insert(5, 100);
+        Integer value = test.kthSmallest(3);
+        Integer equal = 98;
+        assertTrue(value.compareTo(equal) == 0);
     }
 }
