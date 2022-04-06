@@ -8,7 +8,7 @@ public class BSTtest{
 
     @Test
     public void insertTest(){
-        BST<Integer, Integer> test = new BST<>();
+        BinarySearchTree<Integer, Integer> test = new BinarySearchTree<>();
         ArrayList<Integer> equalArray = new ArrayList<>();
         assertEquals(equalArray, test.inorderRec());
         test.insert(3, 26);
@@ -28,7 +28,7 @@ public class BSTtest{
 
     @Test
     public void testDelete(){
-        BST<Integer, Integer> test = new BST<>();
+        BinarySearchTree<Integer, Integer> test = new BinarySearchTree<>();
         ArrayList<Integer> equalArray = new ArrayList<>();
         test.delete(10);
         test.insert(3, 26);
@@ -45,7 +45,7 @@ public class BSTtest{
 
     @Test
     public void testInOrderRec(){
-        BST<Integer, Integer> test = new BST<>();
+        BinarySearchTree<Integer, Integer> test = new BinarySearchTree<>();
         ArrayList<Integer> equalArray = new ArrayList<>();
         assertEquals(equalArray, test.inorderRec());
         test.insert(3, 26);
@@ -65,7 +65,7 @@ public class BSTtest{
 
     @Test
     public void testSearch(){
-        tree<Integer, Integer> test = new BST<>();
+        tree<Integer, Integer> test = new BinarySearchTree<>();
         assertEquals(null, test.search(1));
         test.insert(3, 26);
         test.search(3);
@@ -79,7 +79,7 @@ public class BSTtest{
 
     @Test
     public void testKSmallest(){
-        tree<Integer, Integer> test = new BST<>();
+        tree<Integer, Integer> test = new BinarySearchTree<>();
         test.insert(3, 26);
         test.insert(2, 88);
         test.insert(4, 98);

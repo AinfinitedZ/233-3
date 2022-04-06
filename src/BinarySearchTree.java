@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class BST<T extends Comparable<T>,V> implements tree<T,V>{
+public class BinarySearchTree<T extends Comparable<T>,V> implements tree<T,V>{
     /**
      * nested class for definition of nodes. 
      */
@@ -23,10 +23,10 @@ public class BST<T extends Comparable<T>,V> implements tree<T,V>{
     private BN root;
     private int elements;
 
-    public BST(BN root){
+    public BinarySearchTree(BN root){
         this.root = root;
     } 
-    public BST(){
+    public BinarySearchTree(){
         this.root = null;
     }
     
@@ -164,7 +164,7 @@ public class BST<T extends Comparable<T>,V> implements tree<T,V>{
     }
 
     public static void main(String[] args) {
-        BST<Integer,Integer> testTree = new BST<>();
+        BinarySearchTree<Integer,Integer> testTree = new BinarySearchTree<>();
         List<Integer> array = new ArrayList<>();
         testTree.insert(2,2);
         testTree.insert(1,1);
@@ -194,7 +194,7 @@ public class BST<T extends Comparable<T>,V> implements tree<T,V>{
         System.out.println(testTree.search(4));
         System.out.println(testTree.kthSmallest(3));
         
-        BST<Integer,Integer> testTreeV = new BST<>();
+        BinarySearchTree<Integer,Integer> testTreeV = new BinarySearchTree<>();
         List<Integer> arrayV = new ArrayList<>();
         testTreeV.insert(2,5);
         testTreeV.insert(1,6);
@@ -224,7 +224,7 @@ public class BST<T extends Comparable<T>,V> implements tree<T,V>{
         System.out.println(testTreeV.search(4));
         System.out.println(testTreeV.kthSmallest(3));
 
-        BST<Double,Double> testTreeD = new BST<>();
+        BinarySearchTree<Double,Double> testTreeD = new BinarySearchTree<>();
         List<Double> arrayD = new ArrayList<>();
         testTreeD.insert(2d,2d);
         testTreeD.insert(1d,1d);
@@ -254,7 +254,7 @@ public class BST<T extends Comparable<T>,V> implements tree<T,V>{
         System.out.println(testTreeD.search(4d));
         System.out.println(testTreeD.kthSmallest(3));
 
-        BST<String,String> testTreeS = new BST<>();
+        BinarySearchTree<String,String> testTreeS = new BinarySearchTree<>();
         List<String> arrayS = new ArrayList<>();
         testTreeS.insert("2","2");
         testTreeS.insert("1","1");
